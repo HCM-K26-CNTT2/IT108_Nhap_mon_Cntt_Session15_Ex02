@@ -1,0 +1,18 @@
+﻿Bài 2 : Ngăn chặn rò rỉ dữ liệu do chia sẻ sai quyền 
+Phần 1 (Phân tích):
+* An để quyền truy cập là: Anyone with the link (bất kì ai có đường link)
+* Nhưng An lại kết hợp với quyền người chỉnh sửa là Editor gây ra vi phạm "Quy tắc Cờ Đỏ Bảo mật" vì: khi kết hợp Anyone with the link + Editor sẽ khiến link bị trôi ra ngoài tức là những người khác sẽ có thể vào link đó để chỉnh sửa hoặc hại người gửi link.
+
+
+Phần 2 (Sửa lỗi):
+* Mức quyền cho cộng tác viên là: Commenter (được bình luận để thêm ý kiến, giúp thông báo cho người gửi để chỉnh sửa lại và quyền này ko cho phép công tác viên chỉnh sửa)
+
+
+* Chế độ chia sẻ an toàn 100% là: Restricted ( chỉ những Email đc mời cụ thể mới đc dô link của người gửi)
+
+
+* Cần bật tính để ngăn cộng tác viên tự ý mời thêm người lạ là:
+* B1: bấm chuột phải vào file muốn chia sẻ
+* B2: chọn chia sẻ -> chia sẻ
+* B3: bấm chọn bánh răng bên góc phải ở trên
+* B4: bỏ tích chọn “Người chỉnh sửa có thể xuất bản, thay đổi các quyền và thêm người mới”
